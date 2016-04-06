@@ -23,7 +23,7 @@ class Paginator
         }
         $style=($this->page==$last)?'display:none':'';
         $html.='<li  style="'.$style.'"><a href="?page='.$last.'&perPage='.$this->limit.'">Last</a></li>';
-        $html.='<li  style="'.$style.'"><a href="?perPage=all">All</a></li>';
+        $html.='<li ><a href="?perPage=all">All</a></li>';
         $html.='</ul>';
         return $html;
 

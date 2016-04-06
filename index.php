@@ -15,8 +15,6 @@ $paginator->setPage($page);
 if($perPage!='all'){
     $sql.='LIMIT '.(($paginator->getPage()-1)*$paginator->getLimit()).' , '.$paginator->getLimit();
 }
-
-var_dump($sql);
 $rq=mysqli_query($conn,$sql);
 $teams=array();
 while($row=$rq->fetch_assoc()){
